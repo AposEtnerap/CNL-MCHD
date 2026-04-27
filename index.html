@@ -1,10 +1,57 @@
+🧱 Módulo básico (HTML + CSS)
 <!DOCTYPE html>
 <html>
 <head>
-  <title>O meu site</title>
+  <style>
+    .rei-card {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      width: 400px;
+      margin: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .rei-imagem {
+      width: 100px;
+      height: 100px;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .rei-imagem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .rei-info h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .rei-info p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Olá, mundo!</h1>
-  <p>Este é o meu site no GitHub Pages.</p>
+
+<div class="rei-card">
+  <div class="rei-imagem">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Afonso_I_of_Portugal.jpg" alt="D. Afonso Henriques">
+  </div>
+  <div class="rei-info">
+    <h2>D. Afonso I</h2>
+    <p>Rei de Portugal (1139–1185)</p>
+  </div>
+</div>
+
 </body>
 </html>
